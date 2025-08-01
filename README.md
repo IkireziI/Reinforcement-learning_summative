@@ -35,12 +35,13 @@ Python: Ensure you have Python installed (version 3.8 or newer is recommended).
 
 Git: Make sure Git is installed to clone the repository.
 
+```
 Step 1: Clone the Repository
 
 Open your terminal or command prompt and run the following command to download the project files from GitHub.
 
-``` git clone https://github.com/IkireziI/Reinforcement-learning_summative.git ```
-``` cd Reinforcement-learning_summative ```
+ git clone https://github.com/IkireziI/Reinforcement-learning_summative.git 
+ cd Reinforcement-learning_summative 
 
 Step 2: Create and Activate a Virtual Environment
 
@@ -48,25 +49,26 @@ It is highly recommended to use a virtual environment to manage the project's de
 
 On Windows:
 
-``` python -m venv venv ```
-``` .\venv\Scripts\activate ```
+ python -m venv venv 
+ .\venv\Scripts\activate 
 
 On macOS/Linux:
 
-``` python3 -m venv venv ```
-``` source venv/bin/activate ```
+ python3 -m venv venv 
+ source venv/bin/activate 
 
 Step 3: Install Required Libraries
 
 With your virtual environment activated, install all the necessary Python libraries from the requirements.txt file.
 
-``` pip install -r requirements.txt ```
+ pip install -r requirements.txt 
 
 Step 4: Run the Project
 
 After all the dependencies are installed, you can start the project by running the main Python script.
 
-``` python main.py ```
+ python main.py 
+```
 
 This will begin the training and evaluation process for both the DQNAgent and the PGAgent in the Pygame environment.
 
