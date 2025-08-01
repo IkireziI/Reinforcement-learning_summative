@@ -66,7 +66,7 @@ Step 4: Run the Project
 
 After all the dependencies are installed, you can start the project by running the main Python script.
 
-''' python main.py '''
+*** python main.py ***
 
 This will begin the training and evaluation process for both the DQNAgent and the PGAgent in the Pygame environment.
 
