@@ -39,8 +39,8 @@ Step 1: Clone the Repository
 
 Open your terminal or command prompt and run the following command to download the project files from GitHub.
 
-''' git clone https://github.com/IkireziI/Reinforcement-learning_summative.git '''
-''' cd Reinforcement-learning_summative '''
+``` git clone https://github.com/IkireziI/Reinforcement-learning_summative.git ```
+``` cd Reinforcement-learning_summative ```
 
 Step 2: Create and Activate a Virtual Environment
 
@@ -48,28 +48,73 @@ It is highly recommended to use a virtual environment to manage the project's de
 
 On Windows:
 
-''' python -m venv venv '''
-''' .\venv\Scripts\activate '''
+``` python -m venv venv ```
+``` .\venv\Scripts\activate ```
 
 On macOS/Linux:
 
-''' python3 -m venv venv '''
-''' source venv/bin/activate '''
+``` python3 -m venv venv ```
+``` source venv/bin/activate ```
 
 Step 3: Install Required Libraries
 
 With your virtual environment activated, install all the necessary Python libraries from the requirements.txt file.
 
-''' pip install -r requirements.txt '''
+``` pip install -r requirements.txt ```
 
 Step 4: Run the Project
 
 After all the dependencies are installed, you can start the project by running the main Python script.
 
-*** python main.py ***
+``` python main.py ```
 
 This will begin the training and evaluation process for both the DQNAgent and the PGAgent in the Pygame environment.
 
 
 
 
+## Project Structure ##
+
+```
+project_root/
+├── environment/
+│   ├── custom_env.py            # Custom Gymnasium environment implementation
+│   ├── rendering.py             # Visualization components using PyOpenGL
+
+├── training/
+│   ├── dqn_training.py          # Training script for DQN using SB3
+│   ├── pg_training.py           # Training script for PPO/other PG using SB3
+├── models/
+│   ├── dqn/                     # Saved DQN models
+│   └── pg/                      # Saved policy gradient models
+├── main.py                      # Entry point for running experiments
+├── requirements.txt             # Project dependencies
+└── README.md                    # Project documentation
+```
+
+
+## Hyperparameters ##
+
+DQN Hyperparameters
+Learning rate: 0.0001
+Buffer size: 10000
+Learning starts: 1000
+Batch size: 64
+Gamma (discount factor): 0.99
+Target update interval: 1000
+Exploration fraction: 0.1
+Initial exploration: 1.0
+Final exploration: 0.05
+
+## PPO Hyperparameters ##
+
+Learning rate: 0.0003
+n_steps: 2048
+Batch size: 64
+n_epochs: 10
+Gamma (discount factor): 0.99
+GAE lambda: 0.95
+Clip range: 0.2
+Normalize advantage: True
+
+ 
